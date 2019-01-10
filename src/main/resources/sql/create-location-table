@@ -1,0 +1,7 @@
+CREATE TABLE location
+(
+  location_id SERIAL NOT NULL ,
+  place VARCHAR(100) NOT NULL,
+  description TEXT,
+  CONSTRAINT pk_location PRIMARY KEY (location_id)
+);

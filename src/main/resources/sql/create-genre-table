@@ -1,0 +1,7 @@
+CREATE TABLE genre
+(
+  genre_id SERIAL NOT NULL,
+  genre VARCHAR(50) NOT NULL,
+  CONSTRAINT pk_genre PRIMARY KEY (genre_id)
+);
+

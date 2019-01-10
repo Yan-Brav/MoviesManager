@@ -1,0 +1,14 @@
+CREATE TABLE movie
+(
+  movie_id SERIAL NOT NULL ,
+  title VARCHAR(100) NOT NULL,
+  publication_year INT,
+  duration INT,
+  description TEXT,
+  format_video_id BIGINT,
+  codec_id BIGINT,
+  genre_id BIGINT,
+  quality_id BIGINT,
+  CONSTRAINT pk_movie PRIMARY KEY (movie_id),
+  CONSTRAINT fk_movie FOREIGN KEY (format_video_id) REFERENCES format_video (format_video_id)
+);
