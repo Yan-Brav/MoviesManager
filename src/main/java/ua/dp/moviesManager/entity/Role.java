@@ -1,4 +1,4 @@
-package ua.dp.muviesManager.entity;
+package ua.dp.moviesManager.entity;
 
 import javax.persistence.*;
 import java.io.Serializable;

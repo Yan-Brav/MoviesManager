@@ -1,4 +1,4 @@
-package ua.dp.muviesManager.entity;
+package ua.dp.moviesManager.entity;
 
 
 import org.hibernate.annotations.Type;
