@@ -10,6 +10,9 @@ import java.util.Set;
 @Table(name = "movie")
 public class Movie implements Serializable {
 
+
+    private static final long serialVersionUID = 5645573999949545270L;
+
     private Long id;
     private String title;
     private Integer publicationYear;
