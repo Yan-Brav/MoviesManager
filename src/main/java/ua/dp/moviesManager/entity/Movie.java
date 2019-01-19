@@ -81,6 +81,8 @@ public class Movie implements Serializable {
         this.description = description;
     }
     @Column(name = "codec_id")
+    @ManyToOne
+    @JoinColumn(name = "codec_id")
     public Long getCodec() {
         return codec;
     }
@@ -89,6 +91,8 @@ public class Movie implements Serializable {
         this.codec = codec;
     }
     @Column(name = "genre_id")
+    @ManyToOne
+    @JoinColumn(name = "genre_id")
     public Long getGenre() {
         return genre;
     }
@@ -97,6 +101,8 @@ public class Movie implements Serializable {
         this.genre = genre;
     }
     @Column(name = "quality_id")
+    @ManyToOne
+    @JoinColumn(name = "quality_id")
     public Long getQuality() {
         return quality;
     }

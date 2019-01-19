@@ -67,6 +67,8 @@ public class Box implements Serializable {
         this.capacity = capacity;
     }
     @Column(name = "location_id", nullable = false)
+    @ManyToOne
+    @JoinColumn(name = "location_id")
     public Long getLocation() {
         return location;
     }
