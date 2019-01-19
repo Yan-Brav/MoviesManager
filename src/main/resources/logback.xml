@@ -1,0 +1,39 @@
+<configuration>
+
+    <property name="LOG" value="d:/Disk_K/Yan/Programming/Java/MoviesManager/src/main/resources"/>
+
+    <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>%d{yyyy-MM-dd HH:mm:ss} %-5p [%t:%F:%L]: %m%n%n</pattern>
+        </encoder>
+    </appender>
+
+    <appender name="FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <file>
+            <!--d:/Disk_K/Yan/Programming/Java/MovieManager/src/main/resources/log/application.log-->
+            ${LOG}/log/application.log
+        </file>
+        <encoder>
+            <pattern>%d{yyyy-MM-dd HH:mm:ss} %-5p [%t:%F:%L]: %m%n%n</pattern>
+        </encoder>
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <!--rollover daily-->
+            <fileNamePattern>
+                ${LOG}/archived/debug.%d{yyyy-MM-dd}.%i.log
+            </fileNamePattern>
+            <timeBasedFileNamingAndTriggeringPolicy
+                    class="ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP">
+                <maxFileSize>10MB</maxFileSize>
+            </timeBasedFileNamingAndTriggeringPolicy>
+        </rollingPolicy>
+    </appender>
+
+    <logger name="ua.dp.moviesManager" level="INFO" additivity="false">
+        <appender-ref ref="FILE"/>
+    </logger>
+
+    <root level="DEBUG">
+        <appender-ref ref="FILE"/>
+        <appender-ref ref="STDOUT"/>
+    </root>
+</configuration>
