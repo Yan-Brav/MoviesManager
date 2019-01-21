@@ -7,7 +7,7 @@
     <groupId>ua.dp.moviesManager</groupId>
     <artifactId>moviesManager</artifactId>
     <version>1.0-SNAPSHOT</version>
-    <packaging>jar</packaging>
+    <packaging>war</packaging>
 
     <properties>
         <jdk.version>1.8</jdk.version>
