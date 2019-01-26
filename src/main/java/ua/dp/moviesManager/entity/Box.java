@@ -16,7 +16,7 @@ public class Box implements Serializable {
     private Integer number;
     private String title;
     private Integer capacity;
-    private Long location;
+    private Location location;
     private Integer emptyCells;
     private String description;
     private Set<Disk> disks = new HashSet<Disk>();
@@ -66,14 +66,14 @@ public class Box implements Serializable {
     public void setCapacity(Integer capacity) {
         this.capacity = capacity;
     }
-    @Column(name = "location_id", nullable = false)
+//    @Column(name = "location_id", nullable = false)
     @ManyToOne
     @JoinColumn(name = "location_id")
-    public Long getLocation() {
-        return location;
+    public Location getLocation() {
+        return this.location;
     }
 
-    public void setLocation(Long location) {
+    public void setLocation(Location location) {
         this.location = location;
     }
     @Column(name = "empty_cells")
@@ -92,7 +92,7 @@ public class Box implements Serializable {
     public void setDescription(String description) {
         this.description = description;
     }
-    @OneToMany(mappedBy = "box_id", cascade = CascadeType.ALL, orphanRemoval = true)
+    @OneToMany(mappedBy = "box", cascade = CascadeType.ALL, orphanRemoval = true)
     public Set<Disk> getDisks() {
         return disks;
     }

@@ -1,8 +1,7 @@
 package ua.dp.moviesManager.service;
 
 import com.google.common.collect.Lists;
-import org.hibernate.criterion.Criterion;
-import org.hibernate.criterion.Restrictions;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -18,7 +17,6 @@ import java.util.List;
 public class ActorServiceImpl implements ActorService {
 
     private ActorRepository actorRepository;
-    private String expectedName;
 
     @Override
     @Transactional(readOnly = true)
@@ -27,8 +25,9 @@ public class ActorServiceImpl implements ActorService {
     }
 
     @Override
+    @Transactional(readOnly = true)
     public Actor findById(Long id) {
-        return null;
+        return actorRepository.findOne(id);
     }
 
     @Override
@@ -43,14 +42,16 @@ public class ActorServiceImpl implements ActorService {
 
     @Override
     public Actor createOrUpdate(Actor actor) {
-        return null;
+        return actorRepository.save(actor);
     }
 
     @Override
     public void delete(Actor actor) {
     }
 
-    public Criterion toCriteria(){
-        return Restrictions.eq("lastName", expectedName);
+    @Autowired
+    public void setActorRepository(ActorRepository actorRepository){
+        this.actorRepository = actorRepository;
     }
+
 }

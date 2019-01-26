@@ -14,8 +14,8 @@ public class Disk implements Serializable {
 
     private Long id;
     private String number;
-    private Long basis;
-    private Long box;
+    private Basis basis;
+    private Box box;
 
     public Disk() {
     }
@@ -24,7 +24,7 @@ public class Disk implements Serializable {
         this.number = number;
     }
 
-    public Disk(String number, Long box) {
+    public Disk(String number, Box box) {
         this.number = number;
         this.box = box;
     }
@@ -46,24 +46,24 @@ public class Disk implements Serializable {
     public void setNumber(String number) {
         this.number = number;
     }
-    @Column(name = "basis_id")
+//    @Column(name = "basis_id")
     @ManyToOne
     @JoinColumn(name = "basis_id")
-    public Long getBasis() {
-        return basis;
+    public Basis getBasis() {
+        return this.basis;
     }
 
-    public void setBasis(Long basis) {
+    public void setBasis(Basis basis) {
         this.basis = basis;
     }
-    @Column(name = "box_id", nullable = false)
+//    @Column(name = "box_id", nullable = false)
     @ManyToOne
     @JoinColumn(name = "box_id")
-    public Long getBox() {
-        return box;
+    public Box getBox() {
+        return this.box;
     }
 
-    public void setBox(Long box) {
+    public void setBox(Box box) {
         this.box = box;
     }
 

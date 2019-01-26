@@ -18,9 +18,9 @@ public class Movie implements Serializable {
     private Integer publicationYear;
     private Integer duration;
     private String description;
-    private Long codec;
-    private Long genre;
-    private Long quality;
+    private Codec codec;
+    private Genre genre;
+    private Quality quality;
     private Set<Actor> actors = new HashSet<Actor>();
     private Set<Director> directors = new HashSet<Director>();
     private Set<Disk> disks = new HashSet<Disk>();
@@ -80,34 +80,34 @@ public class Movie implements Serializable {
     public void setDescription(String description) {
         this.description = description;
     }
-    @Column(name = "codec_id")
+//    @Column(name = "codec_id")
     @ManyToOne
     @JoinColumn(name = "codec_id")
-    public Long getCodec() {
-        return codec;
+    public Codec getCodec() {
+        return this.codec;
     }
 
-    public void setCodec(Long codec) {
+    public void setCodec(Codec codec) {
         this.codec = codec;
     }
-    @Column(name = "genre_id")
+//    @Column(name = "genre_id")
     @ManyToOne
     @JoinColumn(name = "genre_id")
-    public Long getGenre() {
-        return genre;
+    public Genre getGenre() {
+        return this.genre;
     }
 
-    public void setGenre(Long genre) {
+    public void setGenre(Genre genre) {
         this.genre = genre;
     }
-    @Column(name = "quality_id")
+//    @Column(name = "quality_id")
     @ManyToOne
     @JoinColumn(name = "quality_id")
-    public Long getQuality() {
-        return quality;
+    public Quality getQuality() {
+        return this.quality;
     }
 
-    public void setQuality(Long quality) {
+    public void setQuality(Quality quality) {
         this.quality = quality;
     }
     @ManyToMany

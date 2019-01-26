@@ -40,7 +40,7 @@ public class Codec implements Serializable {
     public void setType(String type) {
         this.type = type;
     }
-    @OneToMany(mappedBy = "codec_id", cascade = CascadeType.ALL, orphanRemoval = true)
+    @OneToMany(mappedBy = "codec", cascade = CascadeType.ALL, orphanRemoval = true)
     public Set<Movie> getMovies() {
         return movies;
     }

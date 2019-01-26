@@ -6,6 +6,8 @@ import java.util.HashSet;
 import java.util.Objects;
 import java.util.Set;
 
+@Entity
+@Table(name = "location")
 public class Location implements Serializable {
 
 
@@ -48,7 +50,8 @@ public class Location implements Serializable {
     public void setDescription(String description) {
         this.description = description;
     }
-    @OneToMany(mappedBy = "location_id", cascade = CascadeType.ALL, orphanRemoval = true)
+
+    @OneToMany(mappedBy = "location", cascade = CascadeType.ALL, orphanRemoval = true)
     public Set<Box> getBoxes() {
         return boxes;
     }

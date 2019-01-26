@@ -50,7 +50,7 @@ public class Quality implements Serializable {
     public void setDescription(String description) {
         this.description = description;
     }
-    @OneToMany(mappedBy = "quality_id", cascade = CascadeType.ALL, orphanRemoval = true)
+    @OneToMany(mappedBy = "quality", cascade = CascadeType.ALL, orphanRemoval = true)
     public Set<Movie> getMovies() {
         return movies;
     }

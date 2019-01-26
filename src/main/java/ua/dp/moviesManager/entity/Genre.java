@@ -6,6 +6,8 @@ import java.util.HashSet;
 import java.util.Objects;
 import java.util.Set;
 
+@Entity
+@Table(name = "genre")
 public class Genre implements Serializable {
 
 
@@ -39,7 +41,7 @@ public class Genre implements Serializable {
     public void setGenre(String genre) {
         this.genre = genre;
     }
-    @OneToMany(mappedBy = "genre_id", cascade = CascadeType.ALL, orphanRemoval = true)
+    @OneToMany(mappedBy = "genre", cascade = CascadeType.ALL, orphanRemoval = true)
     public Set<Movie> getMovies() {
         return movies;
     }

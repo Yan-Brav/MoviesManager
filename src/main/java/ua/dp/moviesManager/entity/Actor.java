@@ -13,6 +13,9 @@ import java.util.Set;
 
 @Entity
 @Table(name = "actor")
+/*@NamedQueries({
+        @NamedQuery(name = "Actor.findAll", query = "select a from Actor a")
+            })*/
 public class Actor implements Serializable{
 
 
@@ -52,7 +55,7 @@ public class Actor implements Serializable{
         this.id = id;
     }
 
-    @Column(name = "actor_id", nullable = false)
+    @Column(name = "first_name", nullable = false)
     public String getFirstName() {
         return firstName;
     }

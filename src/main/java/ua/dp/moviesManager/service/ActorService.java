@@ -11,6 +11,6 @@ public interface ActorService {
     Actor findById(Long id);
     Actor findByLastName(String lastName);
     List<Actor> findByMovie(Movie movie);
-    Actor createOrUpdate(Actor actor);
+    Actor createOrUpdate(Actor actor);//Save
     void delete(Actor actor);
 }

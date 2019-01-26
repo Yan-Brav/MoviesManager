@@ -42,7 +42,7 @@ public class Basis implements Serializable {
     public void setType(String type) {
         this.type = type;
     }
-    @OneToMany(mappedBy = "basis_id", cascade = CascadeType.ALL, orphanRemoval = true)
+    @OneToMany(mappedBy = "basis", cascade = CascadeType.ALL, orphanRemoval = true)
     public Set<Disk> getDisks() {
         return disks;
     }

@@ -1,0 +1,54 @@
+2019-01-21 20:22:20 DEBUG [main:LoggerProviders.java:33]: Logging Provider: org.jboss.logging.Slf4jLoggerProvider
+
+2019-01-21 20:22:20 DEBUG [main:IntegratorServiceImpl.java:46]: Adding Integrator [org.hibernate.cfg.beanvalidation.BeanValidationIntegrator].
+
+2019-01-21 20:22:20 DEBUG [main:IntegratorServiceImpl.java:46]: Adding Integrator [org.hibernate.secure.spi.JaccIntegrator].
+
+2019-01-21 20:22:20 DEBUG [main:IntegratorServiceImpl.java:46]: Adding Integrator [org.hibernate.cache.internal.CollectionCacheInvalidator].
+
+2019-01-21 20:22:20 DEBUG [main:IntegratorServiceImpl.java:46]: Adding Integrator [org.jadira.usertype.dateandtime.joda.integrator.UserTypeJodaTimeHibernateIntegrator].
+
+2019-01-21 20:22:20 DEBUG [main:IntegratorServiceImpl.java:46]: Adding Integrator [org.jadira.usertype.moneyandcurrency.joda.integrator.UserTypeJodaMoneyHibernateIntegrator].
+
+2019-01-21 20:22:20 INFO  [main:Version.java:45]: HHH000412: Hibernate Core {5.2.3.Final}
+
+2019-01-21 20:22:20 INFO  [main:Environment.java:213]: HHH000206: hibernate.properties not found
+
+2019-01-21 20:22:20 INFO  [main:Environment.java:318]: HHH000021: Bytecode provider name : javassist
+
+2019-01-21 20:23:01 DEBUG [main:LoggerProviders.java:33]: Logging Provider: org.jboss.logging.Slf4jLoggerProvider
+
+2019-01-21 20:23:01 DEBUG [main:IntegratorServiceImpl.java:46]: Adding Integrator [org.hibernate.cfg.beanvalidation.BeanValidationIntegrator].
+
+2019-01-21 20:23:01 DEBUG [main:IntegratorServiceImpl.java:46]: Adding Integrator [org.hibernate.secure.spi.JaccIntegrator].
+
+2019-01-21 20:23:01 DEBUG [main:IntegratorServiceImpl.java:46]: Adding Integrator [org.hibernate.cache.internal.CollectionCacheInvalidator].
+
+2019-01-21 20:23:01 DEBUG [main:IntegratorServiceImpl.java:46]: Adding Integrator [org.jadira.usertype.dateandtime.joda.integrator.UserTypeJodaTimeHibernateIntegrator].
+
+2019-01-21 20:23:01 DEBUG [main:IntegratorServiceImpl.java:46]: Adding Integrator [org.jadira.usertype.moneyandcurrency.joda.integrator.UserTypeJodaMoneyHibernateIntegrator].
+
+2019-01-21 20:23:01 INFO  [main:Version.java:45]: HHH000412: Hibernate Core {5.2.3.Final}
+
+2019-01-21 20:23:01 INFO  [main:Environment.java:213]: HHH000206: hibernate.properties not found
+
+2019-01-21 20:23:01 INFO  [main:Environment.java:318]: HHH000021: Bytecode provider name : javassist
+
+2019-01-21 20:26:44 DEBUG [main:LoggerProviders.java:33]: Logging Provider: org.jboss.logging.Slf4jLoggerProvider
+
+2019-01-21 20:26:44 DEBUG [main:IntegratorServiceImpl.java:46]: Adding Integrator [org.hibernate.cfg.beanvalidation.BeanValidationIntegrator].
+
+2019-01-21 20:26:44 DEBUG [main:IntegratorServiceImpl.java:46]: Adding Integrator [org.hibernate.secure.spi.JaccIntegrator].
+
+2019-01-21 20:26:44 DEBUG [main:IntegratorServiceImpl.java:46]: Adding Integrator [org.hibernate.cache.internal.CollectionCacheInvalidator].
+
+2019-01-21 20:26:45 DEBUG [main:IntegratorServiceImpl.java:46]: Adding Integrator [org.jadira.usertype.dateandtime.joda.integrator.UserTypeJodaTimeHibernateIntegrator].
+
+2019-01-21 20:26:45 DEBUG [main:IntegratorServiceImpl.java:46]: Adding Integrator [org.jadira.usertype.moneyandcurrency.joda.integrator.UserTypeJodaMoneyHibernateIntegrator].
+
+2019-01-21 20:26:45 INFO  [main:Version.java:45]: HHH000412: Hibernate Core {5.2.3.Final}
+
+2019-01-21 20:26:45 INFO  [main:Environment.java:213]: HHH000206: hibernate.properties not found
+
+2019-01-21 20:26:45 INFO  [main:Environment.java:318]: HHH000021: Bytecode provider name : javassist
+
