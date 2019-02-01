@@ -13,7 +13,7 @@
         <jdk.version>1.8</jdk.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <spring.version>4.0.2.RELEASE</spring.version>
-        <spring.security.version>3.2.1.RELEASE</spring.security.version>
+        <spring.security.version>4.1.1.RELEASE</spring.security.version>
         <postgresql.version>42.2.1</postgresql.version>
         <jpa.version>1.0.0.Final</jpa.version>
         <joda.time.version>2.2</joda.time.version>
@@ -65,7 +65,7 @@
         <dependency>
             <groupId>org.springframework.security</groupId>
             <artifactId>spring-security-core</artifactId>
-            <version>${spring.security.version}</version>
+            <version>4.1.1.RELEASE</version>
             <exclusions>
                 <exclusion>
                     <groupId>org.springframework</groupId>
