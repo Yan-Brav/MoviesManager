@@ -1,3 +1,4 @@
 .idea/
 target/
 MoviesManager.iml
+src/main/resources/archived/
